@@ -125,7 +125,7 @@ resources:
   - ${file(resources/api-gateway-errors.yml)}
   # DynamoDB 생성에 참조 되는 파일 
   - ${file(resources/dynamodb-table.yml)}
-  # S3
+  # S3 생성에 참조 되는 파일
   - ${file(resources/s3-bucket.yml)}
   # Cognito
   - ${file(resources/cognito-user-pool.yml)}
