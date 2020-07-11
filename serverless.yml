@@ -1,4 +1,4 @@
-service: notes-app-2-api
+service: notes-app-2-api # 서비스 이름 
 
 # Create an optimized package for our functions
 package:
@@ -14,18 +14,18 @@ custom:
   # commands. Or fallsback to what we have set in the provider section.
   stage: ${opt:stage, self:provider.stage}
   # Set the table name here so we can use it while testing locally
-  tableName: ${self:custom.stage}-notes
+  tableName: ${self:custom.stage}-notes #dynamodb 테이블 이름 => resource dynamodb에서 이 이름을 가져다 사용한다.
 
 provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
-  region: us-east-1
+  region: ap-northeast-2 #aws리전
 
   # These environment variables are made available to our functions
   # under process.env.
   environment:
-    tableName: ${self:custom.tableName}
+    tableName: ${self:custom.tableName} #dynamotableName로 설정됨
     stripeSecretKey: ${env:STRIPE_SECRET_KEY}
 
   iamRoleStatements:
@@ -123,7 +123,7 @@ functions:
 resources:
   # API Gateway Errors
   - ${file(resources/api-gateway-errors.yml)}
-  # DynamoDB
+  # DynamoDB 생성에 참조 되는 파일 
   - ${file(resources/dynamodb-table.yml)}
   # S3
   - ${file(resources/s3-bucket.yml)}

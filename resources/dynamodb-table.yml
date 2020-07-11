@@ -2,12 +2,12 @@ Resources:
   NotesTable:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: ${self:custom.tableName}
+      TableName: ${self:custom.tableName} #service.yml 의 custom의 tableName을 가져다가 사용
       AttributeDefinitions:
         - AttributeName: userId
-          AttributeType: S
+          AttributeType: S # userId를 dynamodb Table의 속성으로 설정
         - AttributeName: noteId
-          AttributeType: S
+          AttributeType: S # noteId를 dynamodb Table의 속성으로 설정
       KeySchema:
         - AttributeName: userId
           KeyType: HASH
