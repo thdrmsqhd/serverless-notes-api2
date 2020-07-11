@@ -22,4 +22,4 @@ Resources:
 Outputs:
   AttachmentsBucketName:
     Value:
-      Ref: AttachmentsBucket
+      Ref: AttachmentsBucket #s3버킷 이름 cloudformation에서 이름 자동으로 생성된것을 사용
