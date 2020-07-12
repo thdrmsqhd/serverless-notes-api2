@@ -196,7 +196,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes-app-2-api/dev/1594446778855-2020-07-11T05:52:58.855Z/create.zip"
+          "S3Key": "serverless/notes-app-2-api/dev/1594535382441-2020-07-12T06:29:42.441Z/create.zip"
         },
         "FunctionName": "notes-app-2-api-dev-create",
         "Handler": "create.main",
@@ -238,7 +238,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes-app-2-api/dev/1594446778855-2020-07-11T05:52:58.855Z/get.zip"
+          "S3Key": "serverless/notes-app-2-api/dev/1594535382441-2020-07-12T06:29:42.441Z/get.zip"
         },
         "FunctionName": "notes-app-2-api-dev-get",
         "Handler": "get.main",
@@ -280,7 +280,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes-app-2-api/dev/1594446778855-2020-07-11T05:52:58.855Z/list.zip"
+          "S3Key": "serverless/notes-app-2-api/dev/1594535382441-2020-07-12T06:29:42.441Z/list.zip"
         },
         "FunctionName": "notes-app-2-api-dev-list",
         "Handler": "list.main",
@@ -322,7 +322,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes-app-2-api/dev/1594446778855-2020-07-11T05:52:58.855Z/update.zip"
+          "S3Key": "serverless/notes-app-2-api/dev/1594535382441-2020-07-12T06:29:42.441Z/update.zip"
         },
         "FunctionName": "notes-app-2-api-dev-update",
         "Handler": "update.main",
@@ -364,7 +364,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes-app-2-api/dev/1594446778855-2020-07-11T05:52:58.855Z/delete.zip"
+          "S3Key": "serverless/notes-app-2-api/dev/1594535382441-2020-07-12T06:29:42.441Z/delete.zip"
         },
         "FunctionName": "notes-app-2-api-dev-delete",
         "Handler": "delete.main",
@@ -406,7 +406,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes-app-2-api/dev/1594446778855-2020-07-11T05:52:58.855Z/billing.zip"
+          "S3Key": "serverless/notes-app-2-api/dev/1594535382441-2020-07-12T06:29:42.441Z/billing.zip"
         },
         "FunctionName": "notes-app-2-api-dev-billing",
         "Handler": "billing.main",
@@ -888,7 +888,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1594446774685": {
+    "ApiGatewayDeployment1594535378820": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
